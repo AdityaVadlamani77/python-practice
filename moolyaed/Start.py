@@ -58,3 +58,13 @@ print(var.get('b'))
 print(var.pop('b'))
 print(var.popitem())
 print(var)
+
+cp = [240, 506, 210, 873, 624]
+sp = [632, 308, 705, 493, 777]
+sale = zip(cp, sp)
+
+for x, y in sale:
+    if x < y:
+        print("profit: ", y - x)
+    elif x > y:
+        print("loss: ", x - y)
