@@ -12,12 +12,14 @@ def outer():
 
 outer()
 
+
 def check_type(data):
-    #print(type(data))
+    # print(type(data))
     if type(data) == int:
         print("type = number")
     elif type(data) == tuple:
-        print ("type = tuple")
+        print("type = tuple")
+
 
 check_type(1234)
 check_type((1, 2, 3, 4))
