@@ -1,9 +1,9 @@
-'''
+"""
 re is used for pattern matching or searching
-identifiers: 
+identifiers:
 /d - any number
-/D - anything but a number 
-/s - 
+/D - anything but a number
+/s -
 /S
 /w - word matching
 /W
@@ -24,13 +24,13 @@ wide space characters:
 \n - new line
 \s - space
 \t - tab space
-\f - 
-\r - 
+\f -
+\r -
 
 flags:
 re.M
 re.I
-'''
+"""
 
 '''
 symbols:
@@ -45,9 +45,10 @@ sub
 split
 '''
 
-import re 
+import re
+
 data = "cats are smarter than dogs"
-matchobj = re.match(r"(.*) are (.*?) .*",data)
+matchobj = re.match(r"(.*) are (.*?) .*", data)
 print(matchobj.group())
 print(matchobj.group(1))
 print(matchobj.group(2))
@@ -56,9 +57,9 @@ gmail = "aditya.v.21@gmail.in"
 gmailobj = re.match(r"\w+[./\w]+@\w+[.]*(com|in|gov)", gmail)
 print(gmailobj.group())
 
-#search
+# search
 data = "cats are smarter than dogs"
-searchobj = re.search(r"[a-z].*",data, re.M|re.I)
+searchobj = re.search(r"[a-z].*", data, re.M | re.I)
 if searchobj:
     print(searchobj.group())
 else:

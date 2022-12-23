@@ -44,5 +44,17 @@ print(set1)
 a = 50
 a += 100
 print(a)
-for i in set1:
-    print(i)
+[print(i) for i in set1]
+dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+print(dict1)
+print(dict1.keys())
+var = {key: num * num for (key, num) in dict1.items()}
+print(var)
+print(var.keys())
+print(var.values())
+print(var.items())
+print(var.get('a'))
+print(var.get('b'))
+print(var.pop('b'))
+print(var.popitem())
+print(var)
