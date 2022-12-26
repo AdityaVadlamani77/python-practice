@@ -18,4 +18,3 @@ def char(a):
 char(string1)
 print("\n")
 char(string2)
-
